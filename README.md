@@ -14,7 +14,7 @@ Sessions are 3 hours each, totaling over 50 hours.
 
 ---
 
-## ✅ Topics Covered
+## ✅ Topics to be Covered
 
 ✔️ Machine Learning Basics: workflow, types, challenges, neural networks  
 ✔️ Python Tools: pip, conda, Jupyter Notebook, Google Colab  
@@ -32,6 +32,7 @@ Sessions are 3 hours each, totaling over 50 hours.
 
 ## 🗂️ Folder Structure
 
+```
 📦 DS-ML-Class/
 ├── Day01_Introduction_to_ML/
 ├── Day02_Python_Packages/
@@ -49,7 +50,7 @@ Sessions are 3 hours each, totaling over 50 hours.
 ├── Day14_Dimensionality_Reduction/
 ├── Day15_EDA/
 ├── Day16_NLP_Text_Analysis/
-
+```
 ---
 
 ## 📅 Class Format
