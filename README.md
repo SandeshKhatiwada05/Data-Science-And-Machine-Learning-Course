@@ -1,4 +1,4 @@
-```bash
+
 ## 📊 Data Science & Machine Learning Class
 
 A structured and hands-on journey through core concepts, tools, and algorithms in data science and machine learning.
@@ -94,4 +94,3 @@ pip install numpy pandas matplotlib scikit-learn spacy
 Created and maintained by Sandesh Khatiwada  
 Repository is regularly updated based on course progress.  
 All content is structured for easy revision and self-study.
-```
