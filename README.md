@@ -35,21 +35,7 @@ Sessions are 3 hours each, totaling over 50 hours.
 ```
 📦 DS-ML-Class/
 ├── Day01_Introduction_to_ML/
-├── Day02_Python_Packages/
-├── Day03_Setup_Environment/
-├── Day04_ML_Libraries/
-├── Day05_Model_Evaluation/
-├── Day06_Linear_Regression/
-├── Day07_Logistic_Regression/
-├── Day08_KNN/
-├── Day09_Decision_Trees/
-├── Day10_Unsupervised_Learning/
-├── Day11_Clustering/
-├── Day12_Association_Rules/
-├── Day13_Ensemble_Methods/
-├── Day14_Dimensionality_Reduction/
-├── Day15_EDA/
-├── Day16_NLP_Text_Analysis/
+
 ```
 ---
 
