@@ -30,14 +30,6 @@ Sessions are 3 hours each, totaling over 50 hours.
 
 ---
 
-## 🗂️ Folder Structure
-
-```
-📦 DS-ML-Class/
-├── Day01_Introduction_to_ML/
-
-```
----
 
 ## 📅 Class Format
 
