@@ -68,7 +68,7 @@ pip install numpy pandas matplotlib scikit-learn spacy
 
 ---
 
-## 👨‍💻 Maintainer
+## Maintainer
 
 Created and maintained by Sandesh Khatiwada  
 Repository is regularly updated based on course progress.  
