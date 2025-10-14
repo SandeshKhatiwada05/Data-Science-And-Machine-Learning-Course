@@ -27,3 +27,36 @@ Evaluation & Deployment
 Common Python Libraries:
 
 NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn
+
+
+
+
+
+
+
+
+Data Cleaning & Exploration
+
+Data Cleaning:
+
+Handle missing values → dropna(), fillna()
+
+Handle duplicates → drop_duplicates()
+
+Fix data types → astype()
+
+Handle outliers → IQR or Z-score methods
+
+Exploratory Data Analysis (EDA):
+
+Understand data patterns, correlations, and distributions.
+
+Tools:
+
+.describe() → summary stats
+
+.info() → data structure
+
+sns.heatmap(df.corr()) → correlation check
+
+sns.pairplot(df) → feature relationships
