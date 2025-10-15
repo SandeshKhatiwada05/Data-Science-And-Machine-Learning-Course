@@ -60,3 +60,36 @@ Tools:
 sns.heatmap(df.corr()) → correlation check
 
 sns.pairplot(df) → feature relationships
+
+
+
+
+
+Feature Engineering & Data Preprocessing
+
+Feature Engineering:
+
+Creating new features from existing ones to improve model performance.
+
+Example:
+
+From “Date” → extract “Year”, “Month”, “Day”
+
+Combine multiple columns → ratios, sums, or interactions
+
+Data Preprocessing:
+
+Encoding Categorical Data:
+
+Label Encoding → LabelEncoder()
+
+One-Hot Encoding → pd.get_dummies()
+
+Scaling Features:
+
+Standardization → StandardScaler()
+
+Normalization → MinMaxScaler()
+
+Train-Test Split:
+
