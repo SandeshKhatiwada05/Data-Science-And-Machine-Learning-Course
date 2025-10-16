@@ -93,3 +93,33 @@ Normalization → MinMaxScaler()
 
 Train-Test Split:
 
+
+
+
+
+Machine Learning Basics
+
+Types of ML:
+
+Supervised Learning → labeled data
+
+Regression → predict continuous values
+
+Classification → predict categories
+
+Unsupervised Learning → no labels
+
+Clustering → group similar data
+
+Dimensionality Reduction → reduce features
+
+Reinforcement Learning → agent learns via rewards
+
+Common Algorithms:
+
+Type	Algorithm	Example
+Regression	Linear Regression	Predict house price
+Classification	Logistic Regression, Decision Tree, SVM	Spam detection
+Clustering	K-Means	Customer segmentation
+Dim. Reduction	PCA	Visualizatio
+
