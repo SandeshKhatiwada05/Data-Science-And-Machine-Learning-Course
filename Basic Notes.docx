@@ -97,29 +97,34 @@ Train-Test Split:
 
 
 
-Machine Learning Basics
+Model Evaluation & Improvement
+Model Evaluation Metrics:
 
-Types of ML:
+Regression: MAE, MSE, RMSE, R²
 
-Supervised Learning → labeled data
+Classification: Accuracy, Precision, Recall, F1-score, ROC-AUC
 
-Regression → predict continuous values
+Cross-Validation:
 
-Classification → predict categories
+Reduces overfitting risk
 
-Unsupervised Learning → no labels
+from sklearn.model_selection import cross_val_score
+scores = cross_val_score(model, X, y, cv=5)
+Model Tuning:
 
-Clustering → group similar data
+Grid Search: tests multiple hyperparameter combinations
 
-Dimensionality Reduction → reduce features
+from sklearn.model_selection import GridSearchCV
+grid = GridSearchCV(model, param_grid, cv=5)
+grid.fit(X_train, y_train)
+Random Search: faster alternative
 
-Reinforcement Learning → agent learns via rewards
+Overfitting Fixes:
 
-Common Algorithms:
+Simplify model
 
-Type	Algorithm	Example
-Regression	Linear Regression	Predict house price
-Classification	Logistic Regression, Decision Tree, SVM	Spam detection
-Clustering	K-Means	Customer segmentation
-Dim. Reduction	PCA	Visualizatio
+More data
 
+Regularization (L1, L2)
+
+Dropout (for neural nets)
