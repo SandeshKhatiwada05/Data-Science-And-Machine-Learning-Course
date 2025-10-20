@@ -128,3 +128,36 @@ More data
 Regularization (L1, L2)
 
 Dropout (for neural nets)
+
+
+
+
+
+
+Linear Regression
+
+Predicts continuous values based on linear relationships between variables.
+
+Equation: Y = b0 + b1X1 + b2X2 + ... + bnXn
+
+Goal: Minimize prediction error using Mean Squared Error (MSE).
+
+Assumptions:
+
+Linearity
+
+Independence of errors
+
+Homoscedasticity
+
+Normality of residuals
+
+No multicollinearity
+
+Evaluation metrics: MSE, RMSE, R² score
+
+Advantages: Simple, interpretable, fast.
+
+Disadvantages: Poor for non-linear data, sensitive to outliers.
+
+Use cases: Price prediction, sales forecasting, trend estimation.
