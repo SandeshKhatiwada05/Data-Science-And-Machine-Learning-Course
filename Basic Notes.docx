@@ -161,3 +161,45 @@ Advantages: Simple, interpretable, fast.
 Disadvantages: Poor for non-linear data, sensitive to outliers.
 
 Use cases: Price prediction, sales forecasting, trend estimation.
+
+
+
+
+
+
+
+Logistic Regression
+
+Used for classification, not regression.
+
+Predicts probability of an outcome (e.g., 0 or 1).
+
+Output threshold:
+
+≥ 0.5 → Class 1
+
+< 0.5 → Class 0
+
+Types:
+
+Binary (yes/no)
+
+Multinomial (multi-class)
+
+Ordinal (ranked classes)
+
+Evaluation metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC
+
+Assumptions:
+
+Linear relationship between features and log-odds
+
+Independent observations
+
+No multicollinearity
+
+Advantages: Simple, interpretable, efficient.
+
+Disadvantages: Can’t capture non-linear patterns.
+
+Use cases: Spam detection, disease prediction, customer churn analysis.
