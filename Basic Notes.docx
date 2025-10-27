@@ -208,3 +208,39 @@ Use cases: Spam detection, disease prediction, customer churn analysis.
 
 
   
+
+Decision Tree
+
+A supervised learning algorithm used for classification and regression.
+
+Splits data into branches based on feature conditions → forms a tree structure.
+
+Key terms:
+
+Root Node: First split of the data
+
+Decision Node: Intermediate split
+
+Leaf Node: Final output/prediction
+
+Splitting Criteria:
+
+Classification → Gini Impurity, Entropy (Information Gain)
+
+Regression → Mean Squared Error (MSE)
+
+Stopping conditions:
+
+Max depth
+
+Minimum samples per leaf
+
+Pure node (all same class)
+
+Advantages: Easy to interpret, no scaling needed, handles non-linear data.
+
+Disadvantages: Prone to overfitting, unstable (small data changes can alter tree).
+
+Solutions: Use Random Forest or Pruning.
+
+Use cases: Credit risk prediction, medical diagnosis, loan approval.
