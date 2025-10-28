@@ -244,3 +244,5 @@ Disadvantages: Prone to overfitting, unstable (small data changes can alter tree
 Solutions: Use Random Forest or Pruning.
 
 Use cases: Credit risk prediction, medical diagnosis, loan approval.
+
+
