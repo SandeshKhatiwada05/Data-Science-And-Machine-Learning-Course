@@ -1,4 +1,3 @@
-
 ## Data Science & Machine Learning Class
 
 A structured and hands-on journey through core concepts, tools, and algorithms in data science and machine learning.
