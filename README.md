@@ -9,7 +9,7 @@ All notes, projects, and exercises are uploaded daily based on class sessions.
 
 This course introduces the fundamental concepts and workflows of machine learning and data science using Python.
 It covers supervised and unsupervised algorithms, model evaluation, data preprocessing, dimensionality reduction, NLP, and more.
-Sessions are 3 hours each, totaling over 50 hours.
+Sessions are 3 hours each, totaling over 50 hours. Plus there are additional practice codes and revisions apart from the course.
 
 ---
 
@@ -53,18 +53,10 @@ spaCy
 
 ---
 
-## Installation
+## Basic Installation
 
 pip install numpy pandas matplotlib scikit-learn spacy
 
----
-
-## In Progress
-
-[ ] Daily uploads after each class  
-[ ] Add mini-projects after each topic  
-[ ] Include EDA and real datasets  
-[ ] Expand NLP module with text classification  
 
 ---
 
