@@ -1,0 +1,5 @@
+conda create -n dsmlproject python=3.10 -y
+conda activate dsmlproject
+
+conda install pandas scikit-learn flask -y
+conda install -c conda-forge joblib -y
