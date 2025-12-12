@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Depression Prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius:  15px;
+            box-shadow:  0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            color:  #333;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size:  14px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        input: focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Depression Prediction</h1>
+        <p class="subtitle">Fill in the details below to assess depression risk</p>
+        
+        <form action="/predict_form" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Gender <span class="required">*</span></label>
+                    <select name="gender" required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Age <span class="required">*</span></label>
+                    <input type="number" name="age" min="15" max="100" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>City <span class="required">*</span></label>
+                    <input type="text" name="city" placeholder="e.g., Kathmandu" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Profession <span class="required">*</span></label>
+                    <select name="profession" required>
+                        <option value="">Select</option>
+                        <option value="Student">Student</option>
+                        <option value="Working Professional">Working Professional</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Academic Pressure (1-5) <span class="required">*</span></label>
+                    <input type="number" name="academic_pressure" min="1" max="5" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Work Pressure (0-5) <span class="required">*</span></label>
+                    <input type="number" name="work_pressure" min="0" max="5" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>CGPA (0-10) <span class="required">*</span></label>
+                    <input type="number" name="cgpa" step="0.01" min="0" max="10" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Study Satisfaction (1-5) <span class="required">*</span></label>
+                    <input type="number" name="study_satisfaction" min="1" max="5" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Job Satisfaction (0-5) <span class="required">*</span></label>
+                    <input type="number" name="job_satisfaction" min="0" max="5" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Sleep Duration <span class="required">*</span></label>
+                    <select name="sleep_duration" required>
+                        <option value="">Select</option>
+                        <option value="Less than 5 hours">Less than 5 hours</option>
+                        <option value="5-6 hours">5-6 hours</option>
+                        <option value="7-8 hours">7-8 hours</option>
+                        <option value="More than 8 hours">More than 8 hours</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Dietary Habits <span class="required">*</span></label>
+                    <select name="dietary_habits" required>
+                        <option value="">Select</option>
+                        <option value="Healthy">Healthy</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Unhealthy">Unhealthy</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Degree <span class="required">*</span></label>
+                    <select name="degree" required>
+                        <option value="">Select</option>
+                        <option value="Class 12">Class 12</option>
+                        <option value="BSc">BSc</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BA">BA</option>
+                        <option value="BE">BE</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="PhD">PhD</option>
+                        <option value="LLB">LLB</option>
+                        <option value="B.Pharm">B.Pharm</option>
+                        <option value="B.Ed">B.Ed</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Have you ever had suicidal thoughts?  <span class="required">*</span></label>
+                    <select name="suicidal_thoughts" required>
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Work/Study Hours per day <span class="required">*</span></label>
+                    <input type="number" name="work_study_hours" min="0" max="24" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Financial Stress (1-5) <span class="required">*</span></label>
+                    <input type="number" name="financial_stress" min="1" max="5" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Family History of Mental Illness <span class="required">*</span></label>
+                    <select name="family_history" required>
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit">Predict Depression Risk</button>
+        </form>
+    </div>
+</body>
+</html>
